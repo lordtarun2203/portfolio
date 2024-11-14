@@ -1,0 +1,128 @@
+/* General styles for the home page */
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #3e497a; /* Dark text color */
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+}
+
+/* About section styles */
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7; /* Light gray background for about section */
+  color: #333333; /* Dark text for contrast */
+  padding: 20px;
+}
+
+/* Heading inside About */
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: #3e497a; /* Dark blue for name */
+  margin: 0;
+  padding: 10px;
+}
+
+/* Prompt text and social media icons */
+.about .prompt {
+  width: 50%;
+  font-size: 20px;
+  color: #777777; /* Gray text */
+  margin-top: 20px;
+}
+
+.prompt svg {
+  font-size: 50px;
+  margin: 10px;
+  color: #3e497a; /* Dark blue color for icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.prompt svg:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  color: #ffcc00; /* Yellow on hover */
+}
+
+/* Skills section styles */
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.skills h1 {
+  color: #3e497a; /* Dark blue for Skills heading */
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.skills h1:hover {
+  color: #ffcc00; /* Yellow on hover */
+}
+
+/* Skills list */
+.skills .list {
+  list-style: none;
+  width: 60%;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #555555; /* Gray color for list items */
+}
+
+.skills .list li {
+  margin: 10px 0;
+  transition: color 0.3s ease; /* Hover effect for list items */
+}
+
+.skills .list li:hover {
+  color: #3e497a; /* Dark blue color on hover */
+}
+
+.skills .list li span {
+  color: #777777; /* Lighter gray for skill descriptions */
+}
+
+/* Media queries for smaller screen sizes */
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .skills h1 {
+    font-size: 30px;
+  }
+
+  .skills .list {
+    padding: 0;
+  }
+
+  .skills .list li {
+    font-size: 18px;
+  }
+}

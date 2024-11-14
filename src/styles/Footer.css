@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background: #21325e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-top: 50px; /* Adjusted for better spacing */
+}
+
+.footer p {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.socialMedia svg {
+  color: white;
+  margin: 20px;
+  font-size: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialMedia svg:hover {
+  color: #5a6fa3; /* Color change on hover */
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 150px; /* Adjusting for smaller screens */
+  }
+
+  .socialMedia svg {
+    font-size: 50px;
+  }
+}

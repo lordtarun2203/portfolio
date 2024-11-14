@@ -1,0 +1,42 @@
+.project {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project h1 {
+  margin-top: 80px; /* Increased to avoid navbar overlap */
+  color: #3e497a;
+  font-size: 35px;
+  text-align: center;
+}
+
+.project img {
+  width: 80%; /* Adjusts to screen size */
+  max-width: 700px;
+  border-radius: 10px;
+  margin: 20px 0;
+  object-fit: contain; /* Ensures the image is fully contained within the boundaries */
+}
+
+.project p {
+  font-size: 24px; /* Slightly reduced for better balance */
+  color: #3e497a;
+  text-align: center;
+}
+
+.project svg {
+  font-size: 40px; /* Reduced size for consistency */
+  color: #3e497a;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.project svg:hover {
+  color: #5a6fa3; /* Subtle color change on hover */
+}
